@@ -1,0 +1,384 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2021-09-29T11:11:51.807+00:00" />
+  </meta>
+  <url value="https://fhir.simplifier.net/KNU.MyHealthHub/StructureDefinition/Patient/DataSubjet" />
+  <name value="DataSubject" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient.identifier">
+      <path value="Patient.identifier" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Patient.identifier.use">
+      <path value="Patient.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Patient.identifier.type">
+      <path value="Patient.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Patient.identifier.system">
+      <path value="Patient.identifier.system" />
+      <max value="0" />
+    </element>
+    <element id="Patient.identifier.period">
+      <path value="Patient.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Patient.identifier.assigner">
+      <path value="Patient.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Patient.active">
+      <path value="Patient.active" />
+      <min value="1" />
+    </element>
+    <element id="Patient.name">
+      <path value="Patient.name" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Patient.name.use">
+      <path value="Patient.name.use" />
+      <max value="0" />
+    </element>
+    <element id="Patient.name.text">
+      <path value="Patient.name.text" />
+      <min value="1" />
+    </element>
+    <element id="Patient.name.family">
+      <path value="Patient.name.family" />
+      <min value="1" />
+    </element>
+    <element id="Patient.name.given">
+      <path value="Patient.name.given" />
+      <min value="1" />
+    </element>
+    <element id="Patient.name.prefix">
+      <path value="Patient.name.prefix" />
+      <max value="0" />
+    </element>
+    <element id="Patient.name.suffix">
+      <path value="Patient.name.suffix" />
+      <max value="0" />
+    </element>
+    <element id="Patient.name.period">
+      <path value="Patient.name.period" />
+      <max value="0" />
+    </element>
+    <element id="Patient.telecom">
+      <path value="Patient.telecom" />
+      <min value="1" />
+    </element>
+    <element id="Patient.telecom.system">
+      <path value="Patient.telecom.system" />
+      <min value="1" />
+    </element>
+    <element id="Patient.telecom.value">
+      <path value="Patient.telecom.value" />
+      <min value="1" />
+    </element>
+    <element id="Patient.telecom.use">
+      <path value="Patient.telecom.use" />
+      <min value="1" />
+    </element>
+    <element id="Patient.telecom.rank">
+      <path value="Patient.telecom.rank" />
+      <min value="1" />
+    </element>
+    <element id="Patient.telecom.period">
+      <path value="Patient.telecom.period" />
+      <max value="0" />
+    </element>
+    <element id="Patient.telecom.period.start">
+      <path value="Patient.telecom.period.start" />
+      <min value="1" />
+    </element>
+    <element id="Patient.telecom.period.end">
+      <path value="Patient.telecom.period.end" />
+      <min value="1" />
+    </element>
+    <element id="Patient.gender">
+      <path value="Patient.gender" />
+      <min value="1" />
+    </element>
+    <element id="Patient.birthDate">
+      <path value="Patient.birthDate" />
+      <min value="1" />
+    </element>
+    <element id="Patient.deceased[x]">
+      <path value="Patient.deceased[x]" />
+      <min value="1" />
+    </element>
+    <element id="Patient.address">
+      <path value="Patient.address" />
+      <min value="1" />
+    </element>
+    <element id="Patient.address.use">
+      <path value="Patient.address.use" />
+      <min value="1" />
+    </element>
+    <element id="Patient.address.type">
+      <path value="Patient.address.type" />
+      <min value="1" />
+    </element>
+    <element id="Patient.address.text">
+      <path value="Patient.address.text" />
+      <min value="1" />
+    </element>
+    <element id="Patient.address.postalCode">
+      <path value="Patient.address.postalCode" />
+      <min value="1" />
+    </element>
+    <element id="Patient.address.country">
+      <path value="Patient.address.country" />
+      <min value="1" />
+    </element>
+    <element id="Patient.address.period">
+      <path value="Patient.address.period" />
+      <max value="0" />
+    </element>
+    <element id="Patient.maritalStatus">
+      <path value="Patient.maritalStatus" />
+      <max value="0" />
+    </element>
+    <element id="Patient.multipleBirth[x]">
+      <path value="Patient.multipleBirth[x]" />
+      <max value="0" />
+    </element>
+    <element id="Patient.photo">
+      <path value="Patient.photo" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact.relationship">
+      <path value="Patient.contact.relationship" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Patient.contact.relationship.coding">
+      <path value="Patient.contact.relationship.coding" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact.relationship.text">
+      <path value="Patient.contact.relationship.text" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.name">
+      <path value="Patient.contact.name" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.name.use">
+      <path value="Patient.contact.name.use" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact.name.text">
+      <path value="Patient.contact.name.text" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.name.family">
+      <path value="Patient.contact.name.family" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.name.given">
+      <path value="Patient.contact.name.given" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.name.period">
+      <path value="Patient.contact.name.period" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact.telecom">
+      <path value="Patient.contact.telecom" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.telecom.system">
+      <path value="Patient.contact.telecom.system" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.telecom.value">
+      <path value="Patient.contact.telecom.value" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.telecom.use">
+      <path value="Patient.contact.telecom.use" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.telecom.rank">
+      <path value="Patient.contact.telecom.rank" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.telecom.period">
+      <path value="Patient.contact.telecom.period" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact.address">
+      <path value="Patient.contact.address" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.address.use">
+      <path value="Patient.contact.address.use" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.address.type">
+      <path value="Patient.contact.address.type" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.address.text">
+      <path value="Patient.contact.address.text" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.address.postalCode">
+      <path value="Patient.contact.address.postalCode" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.address.country">
+      <path value="Patient.contact.address.country" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.address.period">
+      <path value="Patient.contact.address.period" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact.gender">
+      <path value="Patient.contact.gender" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.organization.reference">
+      <path value="Patient.contact.organization.reference" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.organization.type">
+      <path value="Patient.contact.organization.type" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.organization.identifier">
+      <path value="Patient.contact.organization.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.organization.identifier.use">
+      <path value="Patient.contact.organization.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact.organization.identifier.type">
+      <path value="Patient.contact.organization.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact.organization.identifier.system">
+      <path value="Patient.contact.organization.identifier.system" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact.organization.identifier.value">
+      <path value="Patient.contact.organization.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Patient.contact.organization.identifier.period">
+      <path value="Patient.contact.organization.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact.organization.identifier.assigner">
+      <path value="Patient.contact.organization.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact.organization.display">
+      <path value="Patient.contact.organization.display" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact.period">
+      <path value="Patient.contact.period" />
+      <max value="0" />
+    </element>
+    <element id="Patient.communication">
+      <path value="Patient.communication" />
+      <min value="1" />
+    </element>
+    <element id="Patient.communication.language.coding">
+      <path value="Patient.communication.language.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Patient.communication.language.coding.system">
+      <path value="Patient.communication.language.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Patient.communication.language.coding.version">
+      <path value="Patient.communication.language.coding.version" />
+      <min value="1" />
+    </element>
+    <element id="Patient.communication.language.coding.code">
+      <path value="Patient.communication.language.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Patient.communication.language.coding.display">
+      <path value="Patient.communication.language.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Patient.communication.language.coding.userSelected">
+      <path value="Patient.communication.language.coding.userSelected" />
+      <min value="1" />
+    </element>
+    <element id="Patient.communication.language.text">
+      <path value="Patient.communication.language.text" />
+      <min value="1" />
+    </element>
+    <element id="Patient.communication.preferred">
+      <path value="Patient.communication.preferred" />
+      <min value="1" />
+    </element>
+    <element id="Patient.generalPractitioner.reference">
+      <path value="Patient.generalPractitioner.reference" />
+      <min value="1" />
+    </element>
+    <element id="Patient.generalPractitioner.type">
+      <path value="Patient.generalPractitioner.type" />
+      <min value="1" />
+    </element>
+    <element id="Patient.generalPractitioner.identifier">
+      <path value="Patient.generalPractitioner.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Patient.generalPractitioner.identifier.use">
+      <path value="Patient.generalPractitioner.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Patient.generalPractitioner.identifier.type">
+      <path value="Patient.generalPractitioner.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Patient.generalPractitioner.identifier.system">
+      <path value="Patient.generalPractitioner.identifier.system" />
+      <max value="0" />
+    </element>
+    <element id="Patient.generalPractitioner.identifier.value">
+      <path value="Patient.generalPractitioner.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Patient.generalPractitioner.identifier.period">
+      <path value="Patient.generalPractitioner.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Patient.generalPractitioner.identifier.assigner">
+      <path value="Patient.generalPractitioner.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Patient.generalPractitioner.display">
+      <path value="Patient.generalPractitioner.display" />
+      <max value="0" />
+    </element>
+    <element id="Patient.managingOrganization">
+      <path value="Patient.managingOrganization" />
+      <max value="0" />
+    </element>
+    <element id="Patient.link">
+      <path value="Patient.link" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,188 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="0f160b55-8cf8-4423-9e9b-531dcb09e94d" />
+  <meta>
+    <lastUpdated value="2021-09-29T11:04:14.209+00:00" />
+  </meta>
+  <url value="https://fhir.simplifier.net/KNU.MyHealthHub/StructureDefinition/Person/Member" />
+  <name value="Member" />
+  <status value="draft" />
+  <date value="2021-09-29T09:59:16.26145Z" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Person" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Person" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Person.identifier">
+      <path value="Person.identifier" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Person.identifier.use">
+      <path value="Person.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Person.identifier.type">
+      <path value="Person.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Person.identifier.system">
+      <path value="Person.identifier.system" />
+      <max value="0" />
+    </element>
+    <element id="Person.identifier.value">
+      <path value="Person.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Person.identifier.period">
+      <path value="Person.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Person.identifier.assigner">
+      <path value="Person.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Person.name">
+      <path value="Person.name" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Person.name.use">
+      <path value="Person.name.use" />
+      <min value="1" />
+    </element>
+    <element id="Person.name.text">
+      <path value="Person.name.text" />
+      <min value="1" />
+    </element>
+    <element id="Person.name.family">
+      <path value="Person.name.family" />
+      <max value="0" />
+    </element>
+    <element id="Person.name.given">
+      <path value="Person.name.given" />
+      <max value="0" />
+    </element>
+    <element id="Person.name.prefix">
+      <path value="Person.name.prefix" />
+      <max value="0" />
+    </element>
+    <element id="Person.name.suffix">
+      <path value="Person.name.suffix" />
+      <max value="0" />
+    </element>
+    <element id="Person.name.period">
+      <path value="Person.name.period" />
+      <max value="0" />
+    </element>
+    <element id="Person.telecom">
+      <path value="Person.telecom" />
+      <max value="0" />
+    </element>
+    <element id="Person.telecom.system">
+      <path value="Person.telecom.system" />
+      <min value="1" />
+    </element>
+    <element id="Person.telecom.value">
+      <path value="Person.telecom.value" />
+      <min value="1" />
+    </element>
+    <element id="Person.telecom.use">
+      <path value="Person.telecom.use" />
+      <min value="1" />
+    </element>
+    <element id="Person.telecom.rank">
+      <path value="Person.telecom.rank" />
+      <min value="1" />
+    </element>
+    <element id="Person.telecom.period">
+      <path value="Person.telecom.period" />
+      <max value="0" />
+    </element>
+    <element id="Person.gender">
+      <path value="Person.gender" />
+      <max value="0" />
+    </element>
+    <element id="Person.birthDate">
+      <path value="Person.birthDate" />
+      <max value="0" />
+    </element>
+    <element id="Person.address">
+      <path value="Person.address" />
+      <max value="0" />
+    </element>
+    <element id="Person.address.use">
+      <path value="Person.address.use" />
+      <min value="1" />
+    </element>
+    <element id="Person.address.type">
+      <path value="Person.address.type" />
+      <min value="1" />
+    </element>
+    <element id="Person.address.postalCode">
+      <path value="Person.address.postalCode" />
+      <min value="1" />
+    </element>
+    <element id="Person.address.country">
+      <path value="Person.address.country" />
+      <min value="1" />
+    </element>
+    <element id="Person.address.period">
+      <path value="Person.address.period" />
+      <max value="0" />
+    </element>
+    <element id="Person.photo">
+      <path value="Person.photo" />
+      <max value="0" />
+    </element>
+    <element id="Person.managingOrganization">
+      <path value="Person.managingOrganization" />
+      <max value="0" />
+    </element>
+    <element id="Person.active">
+      <path value="Person.active" />
+      <min value="1" />
+    </element>
+    <element id="Person.link.target.type">
+      <path value="Person.link.target.type" />
+      <min value="1" />
+    </element>
+    <element id="Person.link.target.identifier">
+      <path value="Person.link.target.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Person.link.target.identifier.use">
+      <path value="Person.link.target.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Person.link.target.identifier.type">
+      <path value="Person.link.target.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Person.link.target.identifier.system">
+      <path value="Person.link.target.identifier.system" />
+      <max value="0" />
+    </element>
+    <element id="Person.link.target.identifier.value">
+      <path value="Person.link.target.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Person.link.target.identifier.period">
+      <path value="Person.link.target.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Person.link.target.identifier.assigner">
+      <path value="Person.link.target.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Person.link.target.display">
+      <path value="Person.link.target.display" />
+      <max value="0" />
+    </element>
+    <element id="Person.link.assurance">
+      <path value="Person.link.assurance" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

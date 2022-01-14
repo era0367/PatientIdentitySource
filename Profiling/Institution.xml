@@ -1,0 +1,191 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="89b75d4a-3cec-42f6-9040-392759402040" />
+  <meta>
+    <lastUpdated value="2021-09-29T11:04:38.529+00:00" />
+  </meta>
+  <url value="https://fhir.simplifier.net/KNU.MyHealthHub/StructureDefinition/Organization/Institution" />
+  <name value="Institution" />
+  <status value="draft" />
+  <date value="2021-09-29T10:44:04.1489094+00:00" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization.identifier.use">
+      <path value="Organization.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Organization.identifier.type">
+      <path value="Organization.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Organization.identifier.system">
+      <path value="Organization.identifier.system" />
+      <max value="0" />
+    </element>
+    <element id="Organization.identifier.value">
+      <path value="Organization.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Organization.identifier.period">
+      <path value="Organization.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Organization.identifier.assigner">
+      <path value="Organization.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Organization.active">
+      <path value="Organization.active" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Organization.type.coding">
+      <path value="Organization.type.coding" />
+      <max value="0" />
+    </element>
+    <element id="Organization.type.text">
+      <path value="Organization.type.text" />
+      <min value="1" />
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <min value="1" />
+    </element>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <min value="1" />
+    </element>
+    <element id="Organization.telecom.system">
+      <path value="Organization.telecom.system" />
+      <min value="1" />
+    </element>
+    <element id="Organization.telecom.value">
+      <path value="Organization.telecom.value" />
+      <min value="1" />
+    </element>
+    <element id="Organization.telecom.use">
+      <path value="Organization.telecom.use" />
+      <min value="1" />
+    </element>
+    <element id="Organization.telecom.rank">
+      <path value="Organization.telecom.rank" />
+      <min value="1" />
+    </element>
+    <element id="Organization.telecom.period">
+      <path value="Organization.telecom.period" />
+      <max value="0" />
+    </element>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <min value="1" />
+    </element>
+    <element id="Organization.address.use">
+      <path value="Organization.address.use" />
+      <min value="1" />
+    </element>
+    <element id="Organization.address.type">
+      <path value="Organization.address.type" />
+      <min value="1" />
+    </element>
+    <element id="Organization.address.postalCode">
+      <path value="Organization.address.postalCode" />
+      <min value="1" />
+    </element>
+    <element id="Organization.address.country">
+      <path value="Organization.address.country" />
+      <min value="1" />
+    </element>
+    <element id="Organization.address.period">
+      <path value="Organization.address.period" />
+      <max value="0" />
+    </element>
+    <element id="Organization.partOf">
+      <path value="Organization.partOf" />
+      <max value="0" />
+    </element>
+    <element id="Organization.contact.purpose">
+      <path value="Organization.contact.purpose" />
+      <max value="0" />
+    </element>
+    <element id="Organization.contact.name">
+      <path value="Organization.contact.name" />
+      <min value="1" />
+    </element>
+    <element id="Organization.contact.name.use">
+      <path value="Organization.contact.name.use" />
+      <min value="1" />
+    </element>
+    <element id="Organization.contact.name.text">
+      <path value="Organization.contact.name.text" />
+      <min value="1" />
+    </element>
+    <element id="Organization.contact.name.family">
+      <path value="Organization.contact.name.family" />
+      <max value="0" />
+    </element>
+    <element id="Organization.contact.name.given">
+      <path value="Organization.contact.name.given" />
+      <max value="0" />
+    </element>
+    <element id="Organization.contact.name.period">
+      <path value="Organization.contact.name.period" />
+      <max value="0" />
+    </element>
+    <element id="Organization.contact.telecom.system">
+      <path value="Organization.contact.telecom.system" />
+      <min value="1" />
+    </element>
+    <element id="Organization.contact.telecom.value">
+      <path value="Organization.contact.telecom.value" />
+      <min value="1" />
+    </element>
+    <element id="Organization.contact.telecom.use">
+      <path value="Organization.contact.telecom.use" />
+      <min value="1" />
+    </element>
+    <element id="Organization.contact.telecom.rank">
+      <path value="Organization.contact.telecom.rank" />
+      <min value="1" />
+    </element>
+    <element id="Organization.contact.telecom.period">
+      <path value="Organization.contact.telecom.period" />
+      <max value="0" />
+    </element>
+    <element id="Organization.contact.address.use">
+      <path value="Organization.contact.address.use" />
+      <min value="1" />
+    </element>
+    <element id="Organization.contact.address.type">
+      <path value="Organization.contact.address.type" />
+      <min value="1" />
+    </element>
+    <element id="Organization.contact.address.text">
+      <path value="Organization.contact.address.text" />
+      <min value="1" />
+    </element>
+    <element id="Organization.contact.address.postalCode">
+      <path value="Organization.contact.address.postalCode" />
+      <min value="1" />
+    </element>
+    <element id="Organization.contact.address.country">
+      <path value="Organization.contact.address.country" />
+      <min value="1" />
+    </element>
+    <element id="Organization.contact.address.period">
+      <path value="Organization.contact.address.period" />
+      <max value="0" />
+    </element>
+    <element id="Organization.endpoint">
+      <path value="Organization.endpoint" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

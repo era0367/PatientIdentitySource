@@ -1,0 +1,234 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="3a010491-894f-4908-b10b-b2a34e09c9ea" />
+  <meta>
+    <lastUpdated value="2021-09-29T11:16:55.605+00:00" />
+  </meta>
+  <url value="https://fhir.simplifier.net/KNU.MyHealthHub/StructureDefinition/Practitioner/DataConsumer" />
+  <name value="DataConsumer" />
+  <status value="draft" />
+  <date value="2021-09-29T11:12:06.9959097+00:00" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Practitioner" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Practitioner.identifier">
+      <path value="Practitioner.identifier" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Practitioner.identifier.use">
+      <path value="Practitioner.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.identifier.type">
+      <path value="Practitioner.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.identifier.system">
+      <path value="Practitioner.identifier.system" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.identifier.value">
+      <path value="Practitioner.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.identifier.period">
+      <path value="Practitioner.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.identifier.assigner">
+      <path value="Practitioner.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.active">
+      <path value="Practitioner.active" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.name">
+      <path value="Practitioner.name" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Practitioner.name.use">
+      <path value="Practitioner.name.use" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.name.text">
+      <path value="Practitioner.name.text" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.name.family">
+      <path value="Practitioner.name.family" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.name.given">
+      <path value="Practitioner.name.given" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.name.period">
+      <path value="Practitioner.name.period" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.telecom">
+      <path value="Practitioner.telecom" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.telecom.system">
+      <path value="Practitioner.telecom.system" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.telecom.value">
+      <path value="Practitioner.telecom.value" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.telecom.use">
+      <path value="Practitioner.telecom.use" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.telecom.rank">
+      <path value="Practitioner.telecom.rank" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.telecom.period">
+      <path value="Practitioner.telecom.period" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.address">
+      <path value="Practitioner.address" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.address.use">
+      <path value="Practitioner.address.use" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.address.type">
+      <path value="Practitioner.address.type" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.address.text">
+      <path value="Practitioner.address.text" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.address.postalCode">
+      <path value="Practitioner.address.postalCode" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.address.country">
+      <path value="Practitioner.address.country" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.address.period">
+      <path value="Practitioner.address.period" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.gender">
+      <path value="Practitioner.gender" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.birthDate">
+      <path value="Practitioner.birthDate" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.photo">
+      <path value="Practitioner.photo" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.qualification">
+      <path value="Practitioner.qualification" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Practitioner.qualification.identifier">
+      <path value="Practitioner.qualification.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.qualification.code.coding">
+      <path value="Practitioner.qualification.code.coding" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.qualification.code.text">
+      <path value="Practitioner.qualification.code.text" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.qualification.period">
+      <path value="Practitioner.qualification.period" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.qualification.issuer">
+      <path value="Practitioner.qualification.issuer" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.qualification.issuer.reference">
+      <path value="Practitioner.qualification.issuer.reference" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.qualification.issuer.type">
+      <path value="Practitioner.qualification.issuer.type" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.qualification.issuer.identifier">
+      <path value="Practitioner.qualification.issuer.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.qualification.issuer.identifier.use">
+      <path value="Practitioner.qualification.issuer.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.qualification.issuer.identifier.type">
+      <path value="Practitioner.qualification.issuer.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.qualification.issuer.identifier.system">
+      <path value="Practitioner.qualification.issuer.identifier.system" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.qualification.issuer.identifier.value">
+      <path value="Practitioner.qualification.issuer.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.qualification.issuer.identifier.period">
+      <path value="Practitioner.qualification.issuer.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.qualification.issuer.identifier.assigner">
+      <path value="Practitioner.qualification.issuer.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.qualification.issuer.display">
+      <path value="Practitioner.qualification.issuer.display" />
+      <max value="0" />
+    </element>
+    <element id="Practitioner.communication.coding">
+      <path value="Practitioner.communication.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Practitioner.communication.coding.system">
+      <path value="Practitioner.communication.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.communication.coding.version">
+      <path value="Practitioner.communication.coding.version" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.communication.coding.code">
+      <path value="Practitioner.communication.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.communication.coding.display">
+      <path value="Practitioner.communication.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.communication.coding.userSelected">
+      <path value="Practitioner.communication.coding.userSelected" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.communication.text">
+      <path value="Practitioner.communication.text" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
